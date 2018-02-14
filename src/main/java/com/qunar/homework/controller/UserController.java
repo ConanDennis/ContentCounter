@@ -25,8 +25,7 @@ public class UserController {
 
     @Resource
     private IUserService userService;
-    @Autowired
-    protected RedisService redisService;
+
 
     @RequestMapping(value = "/showUser/{id}" ,method = RequestMethod.GET)
     @ApiOperation(value = "获取用户信息", httpMethod = "Get", consumes = "application/json;charset=UTF-8", notes = "查询用户信息")

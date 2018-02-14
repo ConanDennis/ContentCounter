@@ -35,8 +35,8 @@
     </bean>
 
     <!-- 引入配置文件 -->
-    <import resource="classpath:module/redis-context.xml" />
-    <import resource="classpath:module/activemq-context.xml" />
+    <!--<import resource="classpath:module/redis-context.xml" />-->
+    <!--<import resource="classpath:module/activemq-context.xml" />-->
     <import resource="classpath:mybatis/spring-mybatis.xml"></import>
 
 

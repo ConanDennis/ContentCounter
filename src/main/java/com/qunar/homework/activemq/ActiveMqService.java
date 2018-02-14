@@ -13,7 +13,7 @@ import javax.jms.Session;
 /**
  * Created by yangli on 2016/8/17.
  */
-@Service
+//@Service
 public class ActiveMqService {
     @Autowired
     private JmsTemplate jmsTemplate;
