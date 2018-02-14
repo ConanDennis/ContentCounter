@@ -29,7 +29,7 @@
     delete from employee
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.generator.pojo.Employee">
+  <insert id="insert" parameterType="com.qunar.homework.generator.pojo.Employee">
     insert into employee (id, name, sex, age, 
       birthday, password, isenable, 
       createtime)
@@ -96,7 +96,7 @@
     </trim>
 
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.generator.pojo.Employee">
+  <update id="updateByPrimaryKeySelective" parameterType="com.qunar.homework.generator.pojo.Employee">
     update employee
     <set>
       <if test="name != null">
@@ -123,7 +123,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.generator.pojo.Employee">
+  <update id="updateByPrimaryKey" parameterType="com.qunar.homework.generator.pojo.Employee">
     update employee
     set name = #{name,jdbcType=VARCHAR},
       sex = #{sex,jdbcType=BIT},

@@ -1,6 +1,6 @@
-package com.generator.dao;
+package com.qunar.homework.generator.dao;
 
-import com.generator.pojo.Employee;
+import com.qunar.homework.generator.pojo.Employee;
 
 public interface EmployeeMapper {
     int deleteByPrimaryKey(Integer id);

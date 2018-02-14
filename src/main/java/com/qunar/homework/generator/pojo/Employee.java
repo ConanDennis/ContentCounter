@@ -1,4 +1,4 @@
-package com.generator.pojo;
+package com.qunar.homework.generator.pojo;
 
 import java.util.Date;
 

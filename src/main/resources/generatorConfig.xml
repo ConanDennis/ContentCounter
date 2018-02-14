@@ -33,18 +33,18 @@
         </javaTypeResolver>
 
         <!--要生成的 pojo 模块位置-->
-        <javaModelGenerator targetPackage="com.generator.pojo" targetProject="E:\JAVA\Test\ssm-test\src\main\java">
+        <javaModelGenerator targetPackage="com.qunar.homework.generator.pojo" targetProject="E:\JAVA\Test\ssm-test\src\main\java">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <!--要生成的 Mapper.xml 文件位置-->
-        <sqlMapGenerator targetPackage="com.generator.mapper" targetProject="E:\JAVA\Test\ssm-test\src\main\java">
+        <sqlMapGenerator targetPackage="com.qunar.homework.generator.mapper" targetProject="E:\JAVA\Test\ssm-test\src\main\java">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
         <!--要生成的 Mapper 接口类-->
-        <javaClientGenerator targetPackage="com.generator.dao" targetProject="E:\JAVA\Test\ssm-test\src\main\java" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="com.qunar.homework.generator.dao" targetProject="E:\JAVA\Test\ssm-test\src\main\java" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 

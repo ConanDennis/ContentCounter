@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.generator.dao.EmployeeMapper">
-  <resultMap id="BaseResultMap" type="com.generator.pojo.Employee">
+<mapper namespace="com.qunar.homework.generator.dao.EmployeeMapper">
+  <resultMap id="BaseResultMap" type="com.qunar.homework.generator.pojo.Employee">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="sex" jdbcType="BIT" property="sex" />
@@ -25,7 +25,7 @@
     delete from employee
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.generator.pojo.Employee">
+  <insert id="insert" parameterType="com.qunar.homework.generator.pojo.Employee">
     insert into employee (id, name, sex, age, 
       birthday, password, isenable, 
       createtime)
@@ -33,7 +33,7 @@
       #{birthday,jdbcType=TIMESTAMP}, #{password,jdbcType=VARCHAR}, #{isenable,jdbcType=BIT}, 
       #{createtime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.generator.pojo.Employee">
+  <insert id="insertSelective" parameterType="com.qunar.homework.generator.pojo.Employee">
     insert into employee
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -88,7 +88,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.generator.pojo.Employee">
+  <update id="updateByPrimaryKeySelective" parameterType="com.qunar.homework.generator.pojo.Employee">
     update employee
     <set>
       <if test="name != null">
@@ -115,7 +115,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.generator.pojo.Employee">
+  <update id="updateByPrimaryKey" parameterType="com.qunar.homework.generator.pojo.Employee">
     update employee
     set name = #{name,jdbcType=VARCHAR},
       sex = #{sex,jdbcType=BIT},
@@ -126,7 +126,7 @@
       createtime = #{createtime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <resultMap id="BaseResultMap" type="com.generator.pojo.Employee">
+  <resultMap id="BaseResultMap" type="com.qunar.homework.generator.pojo.Employee">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="sex" jdbcType="BIT" property="sex" />
@@ -149,7 +149,7 @@
     delete from employee
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.generator.pojo.Employee">
+  <insert id="insert" parameterType="com.qunar.homework.generator.pojo.Employee">
     insert into employee (id, name, sex, age, 
       birthday, password, isenable, 
       createtime)
@@ -157,7 +157,7 @@
       #{birthday,jdbcType=TIMESTAMP}, #{password,jdbcType=VARCHAR}, #{isenable,jdbcType=BIT}, 
       #{createtime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.generator.pojo.Employee">
+  <insert id="insertSelective" parameterType="com.qunar.homework.generator.pojo.Employee">
     insert into employee
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -212,7 +212,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.generator.pojo.Employee">
+  <update id="updateByPrimaryKeySelective" parameterType="com.qunar.homework.generator.pojo.Employee">
     update employee
     <set>
       <if test="name != null">
@@ -239,7 +239,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.generator.pojo.Employee">
+  <update id="updateByPrimaryKey" parameterType="com.qunar.homework.generator.pojo.Employee">
     update employee
     set name = #{name,jdbcType=VARCHAR},
       sex = #{sex,jdbcType=BIT},
@@ -250,7 +250,7 @@
       createtime = #{createtime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <resultMap id="BaseResultMap" type="com.generator.pojo.Employee">
+  <resultMap id="BaseResultMap" type="com.qunar.homework.generator.pojo.Employee">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="sex" jdbcType="BIT" property="sex" />
@@ -273,7 +273,7 @@
     delete from employee
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.generator.pojo.Employee">
+  <insert id="insert" parameterType="com.qunar.homework.generator.pojo.Employee">
     insert into employee (id, name, sex, age, 
       birthday, password, isenable, 
       createtime)
@@ -281,7 +281,7 @@
       #{birthday,jdbcType=TIMESTAMP}, #{password,jdbcType=VARCHAR}, #{isenable,jdbcType=BIT}, 
       #{createtime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.generator.pojo.Employee">
+  <insert id="insertSelective" parameterType="com.qunar.homework.generator.pojo.Employee">
     insert into employee
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -336,7 +336,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.generator.pojo.Employee">
+  <update id="updateByPrimaryKeySelective" parameterType="com.qunar.homework.generator.pojo.Employee">
     update employee
     <set>
       <if test="name != null">
@@ -363,7 +363,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.generator.pojo.Employee">
+  <update id="updateByPrimaryKey" parameterType="com.qunar.homework.generator.pojo.Employee">
     update employee
     set name = #{name,jdbcType=VARCHAR},
       sex = #{sex,jdbcType=BIT},
