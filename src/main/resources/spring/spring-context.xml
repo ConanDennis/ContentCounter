@@ -16,6 +16,9 @@
    </bean>
    -->
 
+    <!-- 自动扫描 -->
+    <context:component-scan base-package="cn.etao.ssm" />
+
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -32,6 +35,7 @@
     <!-- 引入配置文件 -->
     <import resource="classpath:module/redis-context.xml" />
     <import resource="classpath:module/activemq-context.xml" />
+    <import resource="classpath:mybatis/spring-mybatis.xml"></import>
 
 
 
