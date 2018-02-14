@@ -16,7 +16,7 @@
     <!--<import resource="classpath:redis-context.xml"/>-->
 
     <!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
-    <context:component-scan base-package="cn.etao.ssm.*"/>
+    <context:component-scan base-package="com.qunar.homework.*"/>
 
     <!-- 配置注解驱动 -->
     <mvc:annotation-driven/>
@@ -26,13 +26,13 @@
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <mvc:exclude-mapping path="/user/saveUser"/>
-            <bean class="cn.etao.ssm.common.GlobalLogInteceptor"/>
+            <bean class="com.qunar.homework.common.GlobalLogInteceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 
     <mvc:resources mapping="/apidocs/**" location="/WEB-INF/apidocs/"/>
 
-    <bean class="cn.etao.ssm.common.SwaggerConfig"/>
+    <bean class="com.qunar.homework.common.SwaggerConfig"/>
 
 
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->

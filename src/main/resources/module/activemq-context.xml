@@ -41,7 +41,7 @@
         </constructor-arg>
     </bean>
     <!-- 消息监听器 -->
-    <bean id="consumerMessageListener" class="cn.etao.ssm.activemq.LogConsumerMessageListener" />
+    <bean id="consumerMessageListener" class="com.qunar.homework.activemq.LogConsumerMessageListener" />
     <!-- 消息监听容器 -->
     <bean id="jmsContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
         <property name="connectionFactory" ref="mqConnectionFactory" />
