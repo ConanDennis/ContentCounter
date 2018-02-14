@@ -22,17 +22,16 @@
     <mvc:annotation-driven/>
 
     <!--注册spring mvc 拦截器-->
-    <mvc:interceptors>
-        <mvc:interceptor>
-            <mvc:mapping path="/**"/>
-            <mvc:exclude-mapping path="/user/saveUser"/>
-            <bean class="com.qunar.homework.common.GlobalLogInteceptor"/>
-        </mvc:interceptor>
-    </mvc:interceptors>
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<mvc:exclude-mapping path="/user/saveUser"/>-->
+            <!--<bean class="com.qunar.homework.common.GlobalLogInteceptor"/>-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
 
     <mvc:resources mapping="/apidocs/**" location="/WEB-INF/apidocs/"/>
 
-    <bean class="com.qunar.homework.common.SwaggerConfig"/>
 
 
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->

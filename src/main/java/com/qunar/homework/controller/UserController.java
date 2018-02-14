@@ -1,6 +1,5 @@
 package com.qunar.homework.controller;
 import com.qunar.homework.pojo.User;
-import com.qunar.homework.redis.RedisService;
 import com.qunar.homework.service.IUserService;
 import com.wordnik.swagger.annotations.ApiOperation;
 import com.wordnik.swagger.annotations.ApiParam;
